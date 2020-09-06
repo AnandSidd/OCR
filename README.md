@@ -1,8 +1,12 @@
 # OCR
 
 # Requirements
-python3 or above\n
-pytesseract\n
-tesseract-ocr\n
-opencv-contrib-python\n
-cv2\n
+python3 or above
+
+pytesseract
+
+tesseract-ocr
+
+opencv-contrib-python
+
+cv2
