@@ -10,7 +10,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
 
 # Dilate with horizontal kernel
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (10, 50))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (10, 50))  #change the parameter (10, 50) to dilate as per requirement and get better results
 kernel2 = np.ones((7, 7), np.uint8)
 dilate = cv2.dilate(thresh, kernel, iterations=2)
 cv2.imshow('dilate', dilate)
